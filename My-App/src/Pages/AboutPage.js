@@ -1,8 +1,9 @@
 
-
 function AboutPage() {
   return (
-    <p>Hello there</p>
+    <div className="About">
+        <p style={{color: 'white'}}>Hello there</p>
+    </div>
   );
 }
 

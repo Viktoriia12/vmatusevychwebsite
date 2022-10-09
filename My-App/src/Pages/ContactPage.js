@@ -1,7 +1,6 @@
-
 function ContactPage() {
   return (
-    <div>
+    <div className="Contact">
       <p>Hello there</p>
     </div>
   );

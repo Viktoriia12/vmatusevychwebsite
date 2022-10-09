@@ -2,45 +2,12 @@
   text-align: left;
 }
 
-.header {
-  padding: 100px; /* some padding */
-  text-align: left; /* center the text */
-  color: white; /* white text color */
-  font-size: 55px;
-}
-
-/* Increase the font size of the <h1> element */
-.header h1 {
-  font-size: 25px;
-}
-
-.navbar {
-  align-self: rigth;
-  width: 85%;
-  margin: auto;
-  padding: 35px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: right; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-}
-
 .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: right;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   width: 100%;
   height: 100%;
@@ -61,3 +28,32 @@ button {
   color: white;
   cursor: pointer;
 }
+
+.About, .Contact, .Portfolio{
+  background-image: url(BackgroundImageOtherPages.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Jomolhari', serif;
+  }
+
+  .Dot {
+    position: relative;
+    padding: 20px 10px;
+  }
+  
+  .Dot::before {
+    transform: translateX(-50%);
+    border-radius: 100%;
+    position: absolute;
+    background: white;
+    bottom: 10px;
+    height: 8px;
+    content: '';
+    width: 8px;
+    left: 50%;
+  }

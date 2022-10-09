@@ -1,25 +1,29 @@
 import { Link } from 'react-router-dom';
-
+import { Col, Row } from 'react-bootstrap';
 
 function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
-        <div class="header">
-        <h1>WELCOME, ЛАСКАВО ПРОСИМО,  MY NAME IS</h1>
-        <p>VIKTORIIA MATUSEVYCH</p>
-        </div>
+      <Row>
+        <Col md={8} className="d-flex justify-content-center">
+            <h3>WELCOME, ЛАСКАВО ПРОСИМО,  MY NAME IS</h3>
+        </Col>
+      </Row>
 
-        <button type="button">MY WORK</button>
-
-        <div class="navbar">
-          <ul>
-            <a href="/ContactPage.js" redirect="http://localhost:3000/ContactPage.js">CONTACT</a>
-            <a href="PortfolioPage.js">PORTFOLIO</a>
-            <Link to="/About">ABOUT</Link>  
-            <Link to="/">HOME</Link>  
-          </ul>
-        </div>        
+        <Row>
+          <Col md={8} className="d-flex justify-content-center">
+            <h1 className="d-inline-block p-1" style={{color: '#106BF2', fontSize: '55px'}}>VIKTORIIA </h1>
+            <h1 className="d-inline-block p-1" style={{color: '#E3E812', fontSize: '55px'}}>MATUSEVYCH</h1>
+          </Col>
+        </Row>
+        <br/>
+        <br/>
+        <br/>
+        <Row>
+          <Col md={8} className="d-flex justify-content-center">
+            <button className="mx-auto" type="buttonMain"><Link to="/Portfolio" style={{textDecoration: 'none'}}>MY WORK</Link></button></Col>
+        </Row>
       </header>
     </div>
   );
