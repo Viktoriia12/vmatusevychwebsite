@@ -30,7 +30,9 @@ height: 100%;
 Body and HTML go hand in hand
 
 nothing -> tag
+
 # -> ID
+
 . -> class
 
 margin-> outside of element
@@ -41,3 +43,16 @@ Col md={6} ->how much of the page it takes up, whole width of page is 12
 Index.html -> loads the first
 
 Ctrl+Shift+P ->save without formatting
+
+location === "/About" ? "Dot":"" -> === means equals to 100%, ? -> if :-> else
+if (location === "/About") {
+return "Dot"
+}
+return ""
+
+function dotNavigation(matchingLocation) {
+if (location.pathname === matchingLocation) {
+return "Dot"
+}
+return ""
+}
