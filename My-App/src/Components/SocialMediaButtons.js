@@ -6,30 +6,36 @@ function SocialMediaButtons() {
   return (
     <footer>
       <ul class="wrapper">
-        <li class="icon facebook">
-          <span class="tooltip">Facebook</span>
-          <span>
-            <i class="fab fa-facebook-f"></i>
-          </span>
-          <span>
-            <FacebookIcon fontSize="large" />
-          </span>
-        </li>
-        <li class="icon github">
-          <span class="tooltip">Github</span>
-          <span>
-            <i class="fab fa-github"></i>
-          </span>
-          <span>
-            <GitHubIcon fontSize="large" />
-          </span>
-        </li>
-        <li class="icon linkedin">
-          <span class="tooltip">LinkedIn</span>
-          <span>
-            <LinkedInIcon fontSize="large" />
-          </span>
-        </li>
+        <a href="https://www.facebook.com/vika.matusevych">
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <span>
+              <i class="fab fa-facebook-f"></i>
+            </span>
+            <span>
+              <FacebookIcon fontSize="large" />
+            </span>
+          </li>
+        </a>
+        <a href="https://github.com/Viktoriia12">
+          <li class="icon github">
+            <span class="tooltip">Github</span>
+            <span>
+              <i class="fab fa-github"></i>
+            </span>
+            <span>
+              <GitHubIcon fontSize="large" />
+            </span>
+          </li>
+        </a>
+        <a href="https://www.linkedin.com/in/viktoriia-matusevych/">
+          <li class="icon linkedin">
+            <span class="tooltip">LinkedIn</span>
+            <span>
+              <LinkedInIcon fontSize="large" />
+            </span>
+          </li>
+        </a>
       </ul>
     </footer>
   );
